@@ -10,11 +10,22 @@ This is a simple node editor system that I made for a project. It is a simple sy
 - Save and load node projects
 
 ## How to use
-1. Create a new node by making a new file in the `nodes` folder. The name of the file **MUST** be the same as the name of the class.
+Clone the repository
+```sh
+git clone https://github.com/dron3flyv3r/NodeSystem-MK1.git
+```
+
+Install the dependencies
+```sh
+pip install -r requirements.txt
+```
+
+Create a new node by making a new file in the `nodes` folder. The name of the file **MUST** be the same as the name of the class.
 ```sh
 touch NodeEditor/Nodes/MyNode.py
 ```
-2. Modify the `NodePackage` class in the `NodeEditor/Core/NodePackage.py` file. The reason for this is so the entire node system becomes type safe. You can also add functions to the `NodePackage` class to make to process data or do operations on the nodes.
+
+Modify the `NodePackage` class in the `NodeEditor/Core/NodePackage.py` file. The reason for this is so the entire node system becomes type safe. You can also add functions to the `NodePackage` class to make to process data or do operations on the nodes.
 ```python
 class NodePackage:
     # Define the variables that the node package will have
@@ -33,7 +44,7 @@ class NodePackage:
 
 ```
 
-3. Create a new class that inherits from the `Node` class.
+Create a new class that inherits from the `Node` class.
 ```python
 import dearpygui.dearpygui as dpg
 
@@ -50,7 +61,7 @@ class MyNode(Node):
         )
 ```
 
-3. (Optional) Create some user input fields for the node.
+(Optional) Create some user input fields for the node.
 ```python
 import dearpygui.dearpygui as dpg
 
@@ -74,7 +85,7 @@ class MyNode(Node):
         dpg.add_input_int(label="Number", default_value=0, tag=self.number_id, width=100, callback=self.update)
 ```
 
-4. Create the function that will be called from the other nodes.
+Create the function that will be called from the other nodes.
 ```python
 import dearpygui.dearpygui as dpg
 
@@ -95,7 +106,7 @@ class MyNode(Node):
         return data
 ```
 
-5. Make the save and load functions for the node.
+Make the save and load functions for the node.
 ```python
 import dearpygui.dearpygui as dpg
 
