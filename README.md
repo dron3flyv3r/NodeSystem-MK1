@@ -188,5 +188,12 @@ There are some advanced features that you can use to make the node system more p
 - 'self.on_error': This function can be called to show an error message on the node. This might be used when the data is not valid or the data is not in the correct format. It dose take a string as a parameter that will be displayed as an error message.
 - 'def on_init(self) -> None': This function is called when the node is created. This might be used to set the default values of the input fields or to do some initial setup or if some data need to be cashed.
 
+## Demo
+Here is a simple demo of the node system. The demo is an node-based openCV image processing system. The demo has some fun nodes for basic image processing. You can find it on this [link](https://github.com/dron3flyv3r/NodeSystem-MK1-OpenCV) or you can clone the repository.
+```sh
+git clone https://github.com/dron3flyv3r/NodeSystem-MK1-OpenCV.git
+```
+enjoy the demo. 😄
+
 ## About
 This project was made by me (dron3fly3r) as a simple fun holiday project. The project is fully open source and can be used by anyone. The project is licensed under the MIT license. I will not be maintaining this project as it was just a fun project. If you want to contribute to the project, feel free to add new features, fix bugs or make the project better. If you have any questions or need help, feel free to contact me. So have fun and enjoy the project. 😄
