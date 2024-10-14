@@ -8,6 +8,7 @@ This is a simple node editor system that I made for a project. It is a simple sy
 - Auto save and load projects
 - Simple and basic node configuration
 - Save and load node projects
+- Copy/Paste
 
 ## How to use
 Clone the repository
