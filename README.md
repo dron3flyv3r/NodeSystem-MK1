@@ -9,6 +9,7 @@ This is a simple node editor system that I made for a project. It is a simple sy
 - Simple and basic node configuration
 - Save and load node projects
 - Copy/Paste
+- Asynchronous node execution
 
 ## How to use
 Clone the repository
